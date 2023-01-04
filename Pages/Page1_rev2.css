@@ -1,0 +1,529 @@
+/* основни настройки в html doc */
+html{
+    font-family: 'JetBrains Mono', sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(63, 63, 63);    
+}
+body{
+    margin: 0;
+}
+#wrapper{
+    /* Създава мрежови контейнери display: grid; */
+    display: grid;
+}
+/* ########TOP NAV######### */
+/* ########TOP NAV######### */
+/* ########TOP NAV######### */
+#top-nav{
+    display: flex;
+    position: fixed;
+    top: 0;left: 0;right: 0;    
+    padding: 10px 10px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 15px;    
+}
+#top-nav i{
+    color: rgb(226, 255, 5);
+}
+.topLeft{
+    width: 100%;
+}
+.topRight{
+    text-align: right;   
+    width: 100%;
+}
+/* ########MANU######### */
+#menu_bar{
+    display: flex;
+    position: fixed;
+    top: 0;left: 0;right: 0;    
+}
+#menu_bar>.logo{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.367);
+}
+.logo i{
+    margin: 35px 0 0 30px;
+    color: rgb(243, 243, 243);
+}
+.navigation ul{
+    /* Премахване на точките от списъка  */
+    list-style: none;
+    line-height: 60px;
+    padding: 0;
+    margin: 35px 0 0 0;
+    display: flex; 
+}
+.navigation ul li{
+    margin: auto;
+    padding-top: 20px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    /* Преобразуване на всички текстове в главни букви  */
+    text-transform: uppercase;
+    color: rgb(243, 243, 243);
+    font-size: 1.5rem;
+}
+.navigation ul li a:hover{
+    /* Декорация на текста на хипервръзките */
+    text-decoration: overline;
+    color: rgb(156, 176, 4);
+}
+/* ########HEADER######### */
+/* ########HEADER######### */
+/* ########HEADER######### */
+header{/* добавяне снимка за фон в header секция */
+    background-image:url(../1.Image_fon/Page1/ФОН/1.1.jpg);
+    /* свойство да се вмести и разположи снимката колкото е възможно  */
+    background-size: cover;
+    margin: 40px 0 0 0;
+    padding: 12.5rem 10rem;
+    color: rgb(243, 243, 243);
+    text-align: center;
+    /* позициониране на снимката */
+    background-position: center;
+}
+header h1{
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 4px 4px #FF0000;
+}
+header h3{
+    font-size: 30px;
+    font-weight: 300;
+    text-shadow: 2px 2px #FF0000;
+}
+header a{/* Ширина на бутона */
+    width: 200px;    
+}
+.btn-con {
+    /* Използва се като вградден блоков етикет */
+    display: inline-block;
+    background-color: rgb(174, 62, 62);
+    color: wheat;
+    /* Премахване на долна линия */
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    text-align: center;
+    /* Дебелина на шрифта */
+    font-weight: 600;
+    /* Добавяне на радиус */
+    border-radius: 20px;
+}
+.btn-con:hover{
+    /* Цвят на бутона преди натискане :hover */
+    background-color: rgb(156, 176, 4);
+}
+/* ########ARTICLE 1######### */
+/* ########ARTICLE 1######### */
+/* ########ARTICLE 1######### */
+#DVTS{
+    background-color: rgb(148, 148, 148);
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    padding: 20px 0;
+}
+.DVTS{
+    /* da se premahne */
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 20%;
+    margin: auto;
+    padding: 0 0 20px 0;
+    background-color: rgb(241, 241, 241);
+    
+}
+.DVTS a{
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: #8b0000;
+}
+.DVTS a:hover{
+    /* Декорация на текста на хипервръзките */
+    text-decoration: overline;
+    color: rgb(156, 176, 4);
+}
+.DVTS img{
+    border: 2px solid rgb(140, 0, 0);  
+    width: 200px;
+    border-radius: 100%;
+}
+/* ########ARTICLE 2######### */
+/* ########ARTICLE 2######### */
+/* ########ARTICLE 2######### */
+#about-us{/* da se premahne */
+    border: 2px solid rgb(251, 135, 241);
+    display: flex;   
+    /* background-image: url(../1.Image_fon/Page1/ФОН/функционално-разпределение.jpg); 
+    opacity: 0.5; */
+}
+.aboutLeft, .aboutRight{
+    width: 100%;
+    color: rgb(243, 243, 243);
+    padding: 10px 20px;
+}
+.aboutLeft{
+    padding: 20px 20px 20px 40px;
+}
+.aboutLeft h1{
+    font-weight: 200;
+    font-size: 30px;
+}
+.hrLeft{
+    display: inline-block;
+    left: 0;
+    background-color: rgb(125, 251, 7);
+    padding: 0 0 1.5px 0;
+    width: 20%;
+}
+.paragrafL{
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 200;
+
+}
+#about-us .aboutLeft a{
+    display: inline-block;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    font-size: 1rem;
+    background-color: rgb(174, 62, 62);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 20px 0;
+}    
+
+.butAbout ul{
+     /* Премахване на точките от списъка  */
+     list-style: none;
+     display: flex;
+     margin: auto;
+     padding: 10px;
+
+}
+.butAbout ul li{    
+    margin: auto;
+    padding: 30px 10px;
+}
+
+#about-us .aboutRight a{
+    display: inline-block;
+    width: 200px;
+    text-decoration: none;
+    /* Преобразуване на всички текстове в главни букви  */
+    text-transform: uppercase;    
+    text-align: center;
+    color: rgb(243, 243, 243);
+    font-size: 1.5rem;
+    background-color: rgb(174, 62, 62);
+    padding: 5px 10px;
+    border-radius: 20px;
+}    
+#about-us a:hover{
+    /* Цвят на бутона преди натискане :hover */
+    background-color: rgb(156, 176, 4);
+}
+.paragrafA{
+    padding: 30px 20px;
+    font-size: 15px;
+    font-weight: 200;
+}
+/* ########ARTICLE 3######### */
+/* ########ARTICLE 3######### */
+/* ########ARTICLE 3######### */
+#category-dfm{
+    background-color: rgb(148, 148, 148);
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    padding: 20px 0;
+    
+}
+.DFM{
+    /* da se premahne */
+    border: 2px solid white;
+    /* border-radius: 20px; */
+    width: 32%;
+    border-radius: 10%;
+    margin: auto;
+    padding: 0 0 20px 0;
+    background-color: rgb(241, 241, 241);    
+    
+}
+#category-dfm img{
+    width: 400px;
+    padding: 10px 30px 0 30px;  
+}
+.text{
+    display: flex;    
+    margin: 0;
+    padding: 0;
+}
+.text h1{
+    color: yellowgreen;
+    font-size: 60px;
+    margin: 0;
+    padding-left: 35px;
+}
+.text h3{
+    color: rgb(56, 84, 0);
+    font-size: 25px;
+    margin: 0;
+    padding: 30px 0 0 10px;
+    text-align: left;
+}
+/* .textH3{
+    padding: 0 0 30px 0;
+} */
+.DFM p{
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+    padding: 0 30px 0 35px;
+}
+.DFM a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+.DFM a:hover{
+    background-color: #f8f2f2;
+}
+
+
+/* ######## ASIDE 1######### */
+/* ######## ASIDE 1######### */
+/* ######## ASIDE 1######### */
+#aside1{/* da se premahne */
+    border: 2px solid rgb(251, 4, 4);
+    /* height: 500px; */
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#aside1 h1{
+    font-size: 40px;
+    font-weight: 200;
+    margin: 100px 0 30px 0;
+}
+#aside1 p{
+    font-size: 20px;
+    font-weight: 200;
+}
+.btnAS{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(110, 149, 33);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: black;
+    margin: 30px 0 100px 0;
+}
+.btnAS:hover{
+    background-color: rgb(113, 6, 6);  
+}
+/* ######## ASIDE 2######### */
+/* ######## ASIDE 2######### */
+/* ######## ASIDE 2######### */
+#aside2 { 
+    display: flex;  
+    background-color: rgb(241, 241, 241);
+    margin: 0;
+}
+
+.aside2L{
+    margin: 20px 30px 20px 30px;
+}
+.aside2L img{
+    width: 700px;
+    border: brown solid 1px;
+}
+.aside2R{
+    padding: 50px;
+    font-weight: 400;
+}
+.aside2R h1{
+    font-size: 40px;
+    font-weight: 100;
+}
+.aside2R p{
+    margin-bottom: 70px;
+}
+.btnAS2{
+    text-decoration: none;
+    text-transform: uppercase;    
+    background-color: rgb(133, 190, 19);
+    border-radius: 10px;
+    padding: 5px 10px;
+    /* margin: 100px; */
+}
+.btnAS2:hover{
+    background-color: rgba(174, 62, 62, 0.468);
+}
+/* ######## ASIDE 2######### */
+.AS2R{
+    margin: 20px 30px 20px 30px;
+}
+.AS2R img{
+    width: 700px;
+    border: brown solid 1px;
+}
+.AS2L{
+    padding: 50px;
+    font-weight: 400;
+}
+.AS2L p{
+    margin-bottom: 70px;
+}
+.AS2L h1{
+    font-size: 40px;
+    font-weight: 100;
+}
+/* ######## SECTION BLOG ######### */
+/* ######## SECTION BLOG ######### */
+/* ######## SECTION BLOG ######### */
+#blog{
+    border: 1px solid red;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    text-align: center;
+}
+#blog h1{
+    font-size: 50px;
+    font-weight: 200;
+}
+#blog h2{
+    font-size: 25px;
+    font-weight: 200;
+}
+.sectionBlog{
+    display: flex;
+    /* border: 2px solid white; */
+}
+.title1{
+    /* border: 1px solid red; */
+    margin: 30px;
+}
+.title1 img{
+    width: 95%;
+}
+.title1 h3{
+    text-align: left;
+    padding:0 0 0 15px ;
+    font-weight: 200;
+}
+.title1 p{
+    font-size: 12px;
+    text-align: left;
+    font-weight: 200;
+    padding:0 15px;
+
+}
+.paragrafColor {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 200;
+    color: rgb(5, 255, 5);
+}
+
+.title1 a {
+    /* display: inline-block; */
+    /* margin-left: auto; */
+    /* text-align: left; */
+}
+.btnBlog{
+    /* display: flex; */
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(174, 62, 62);
+    color: wheat;
+    border-radius: 20px;
+    padding: 5px 50px;
+    /* margin-left: auto; */
+    /* text-align: left; */
+    /* text-align: center; */
+}
+.btnBlog:hover{
+    /* Цвят на бутона преди натискане :hover */
+    background-color: rgb(156, 176, 4);
+}
+
+/* ######## FOOTER ######### */
+/* ######## FOOTER ######### */
+/* ######## FOOTER ######### */
+#footer{
+    border: 2px solid red;
+    background-color: black;
+    /* height: 300px; */
+    display: flex;
+    padding: 50px;
+}
+.footer{
+    border: 2px solid rgb(30, 0, 255);
+    width: 25%;
+    /* margin: 50px; */
+    color: white;        
+}
+.col1 h1{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.col1 p{
+    font-weight: 200;
+    font-size: 15px;
+    text-align: left;
+}
+.col1 i{
+    color: #8b0000;       
+}
+/* ............................. */
+.col2 h1{
+    font-weight: 200;
+    font-size: 25px;
+    text-align: left;
+    padding-bottom: 40px;
+}
+.col2 h3{
+    font-weight: 200;
+    font-size: 15px;
+    text-align: left;
+    /* padding-bottom: 50px; */
+}
+
+.col2 p{
+    font-weight: 200;
+    font-size: 14px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.499); 
+}
+.hrFooter{
+    position: relative;
+    left: 0;
+    background-color: chartreuse;
+    color: chartreuse;
+    border: 1px solid chartreuse;
+    width: 25%;
+}
+
+
+
+
+
+
