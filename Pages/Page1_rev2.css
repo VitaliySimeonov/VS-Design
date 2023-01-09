@@ -981,14 +981,14 @@ header a{/* Ширина на бутона */
 /* ######## FOOTER ######### */
 /* ######## FOOTER ######### */
 #footer{
-    border: 2px solid red;
+    /* border: 2px solid rgb(21, 0, 255); */
     background-color: black;
     /* height: 300px; */
     display: flex;
     padding: 50px;
 }
 .footer{
-    border: 2px solid rgb(30, 0, 255);
+    /* border: 2px solid rgb(60, 255, 0); */
     width: 25%;
     /* margin: 50px; */
     color: white;        
@@ -1009,7 +1009,7 @@ header a{/* Ширина на бутона */
 }
 /* ............................. */
 .col2 h1{
-    font-weight: 200;
+    font-weight: 500;
     font-size: 25px;
     text-align: left;
     padding-bottom: 40px;
@@ -1028,10 +1028,44 @@ header a{/* Ширина на бутона */
     color: rgba(255, 255, 255, 0.499); 
 }
 .hrFooter{
-    position: relative;
-    left: 0;
     background-color: chartreuse;
     color: chartreuse;
     border: 1px solid chartreuse;
     width: 25%;
+    display: inline-block;
+    text-align: left;
+}
+/* ............................. */
+.col3{
+    text-align: left;
+}
+.col3 h1{
+    font-weight: 500;
+    font-size: 25px;    
+}
+.col3 h2{
+    font-weight: 200;
+    font-size: 25px;
+    padding: 10px 0;
+}
+/* ............................. */
+.col4{
+    text-align: center;
+}
+.col4 i{
+    padding: 20px;
+}
+.col4 a{
+    color: aliceblue;
+}
+/* ............................. */
+.back a{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    color: rgb(174, 62, 62);   
+    font-size: 30px;
+    text-shadow: 4px 4px rgb(255, 255, 255);
+    border-radius: 10px;
 }
